@@ -137,10 +137,12 @@
                             <p><i class="bi bi-check-circle"></i> 50% Down payment and Rest in 12 No Cost EMI.</p>
                             <p><i class="bi bi-check2-all"></i> AMC are applicable according to apartment.</p>
                             <p><i class="bi bi-telephone-fill"></i> Call us for full information</p>
+                            <div class="d-flex justify-content-center">
                             <button type="button" class="btn btn-sm btn-warning book-package-btn"
                                 data-package="Red Season">
                                 Book Your Package
                             </button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
@@ -154,10 +156,12 @@
                             <p><i class="bi bi-check-circle"></i> 50% Down payment and Rest in 12 No Cost EMI.</p>
                             <p><i class="bi bi-check2-all"></i> AMC are applicable according to apartment.</p>
                             <p><i class="bi bi-telephone-fill"></i> Call us for full information</p>
+                            <div class="d-flex justify-content-center">
                             <button type="button" class="btn btn-sm btn-warning book-package-btn"
                                 data-package="White Season">
                                 Book Your Package
                             </button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
@@ -171,10 +175,12 @@
                             <p><i class="bi bi-check-circle"></i> 50% Down payment and Rest in 12 No Cost EMI.</p>
                             <p><i class="bi bi-check2-all"></i> AMC are applicable according to apartment.</p>
                             <p><i class="bi bi-telephone-fill"></i> Call us for full information</p>
-                            <button type="button" class="btn btn-sm btn-warning book-package-btn"
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-sm btn-warning book-package-btn"
                                 data-package="Blue Season">
                                 Book Your Package
                             </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,7 +192,7 @@
                 <div class="modal-content" style="border-radius: 12px; overflow: hidden;">
                     <div class="modal-header"
                         style="background: linear-gradient(135deg, #0d6efd 0%, #1392f2 100%); color: white; padding: 1rem 1.5rem;">
-                        <h5 class="modal-title fw-semibold mb-0">
+                        <h5 class="modal-title fw-semibold mb-0 text-white">
                             <i class="bi bi-cash-coin me-2"></i><span id="modalTitle">Package</span> Payment
                         </h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
@@ -237,9 +243,7 @@
                         </div>
                         <div class="modal-footer"
                             style="padding: 1rem 1.5rem; background-color: #f8f9fa; border-top: 1px solid #dee2e6;">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                <i class="bi bi-x-circle me-1"></i> Close
-                            </button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-success" id="submitBtn">
                                 <i class="bi bi-credit-card me-1"></i> Proceed to Pay
                             </button>

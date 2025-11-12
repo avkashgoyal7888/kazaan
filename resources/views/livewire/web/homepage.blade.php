@@ -934,7 +934,6 @@
         </div>
     </div>
     <!-- Testimonial End -->
-    <a href="{{ route('admin.dashboard') }}" wire:navigate>Admin Panel</a>
     @push('js')
     <script src="{{ asset('assets/js/counter.js') }}"></script>
     @endpush
