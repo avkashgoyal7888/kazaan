@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+Allow: /about-us
+Allow: /packages
+Allow: /services
+Allow: /terms-condition
+Allow: /return-refund
+Allow: /privacy-policy
+Allow: /blogs
+Allow: /blog/*
+Allow: /gallery
+Allow: /contact-us
+Allow: /booking
+Allow: /login
+Allow: /resorts
+Allow: /resorts/*
+
+Disallow: /logout
+Disallow: /admin/logout
+Disallow: /admin/dashboard
+Disallow: /admin/booking
+Disallow: /admin/blogs
+Disallow: /admin/new-blog
+Disallow: /admin/update-blog/*
+Disallow: /admin/gallery
+Disallow: /admin/contact-us
