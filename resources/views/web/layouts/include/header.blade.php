@@ -10,20 +10,55 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="{{ route('web.home') }}" wire:navigate class="nav-item nav-link active">Home</a>
-                <a href="{{ route('web.about-us') }}" wire:navigate class="nav-item nav-link">About Us</a>
-                <a href="{{ route('web.booking') }}" wire:navigate class="nav-item nav-link">Online Bookings</a>
-                <a href="{{ route('web.packages') }}" wire:navigate class="nav-item nav-link">Packages</a>
-                <a href="{{ route('web.services') }}" wire:navigate class="nav-item nav-link">Services</a>
-                <a href="{{ route('web.resorts') }}" wire:navigate class="nav-item nav-link">Resorts</a>
-                <a href="{{ route('web.gallery') }}" wire:navigate class="nav-item nav-link">Gallery</a>
-                <a href="{{ route('web.contact') }}" wire:navigate class="nav-item nav-link">Contacts</a>
+
+                <a href="{{ route('web.home') }}" wire:navigate
+                    class="nav-item nav-link {{ request()->routeIs('web.home') ? 'active' : '' }}">
+                    Home
+                </a>
+
+                <a href="{{ route('web.about-us') }}" wire:navigate
+                    class="nav-item nav-link {{ request()->routeIs('web.about-us') ? 'active' : '' }}">
+                    About Us
+                </a>
+
+                <a href="{{ route('web.booking') }}" wire:navigate
+                    class="nav-item nav-link {{ request()->routeIs('web.booking') ? 'active' : '' }}">
+                    Online Bookings
+                </a>
+
+                <a href="{{ route('web.packages') }}" wire:navigate
+                    class="nav-item nav-link {{ request()->routeIs('web.packages') ? 'active' : '' }}">
+                    Packages
+                </a>
+
+                <a href="{{ route('web.services') }}" wire:navigate
+                    class="nav-item nav-link {{ request()->routeIs('web.services') ? 'active' : '' }}">
+                    Services
+                </a>
+
+                <a href="{{ route('web.resorts') }}" wire:navigate
+                    class="nav-item nav-link {{ request()->routeIs('web.resorts') ? 'active' : '' }}">
+                    Resorts
+                </a>
+
+                <a href="{{ route('web.gallery') }}" wire:navigate
+                    class="nav-item nav-link {{ request()->routeIs('web.gallery') ? 'active' : '' }}">
+                    Gallery
+                </a>
+
+                <a href="{{ route('web.contact') }}" wire:navigate
+                    class="nav-item nav-link {{ request()->routeIs('web.contact') ? 'active' : '' }}">
+                    Contacts
+                </a>
+
                 @auth
                     @if (auth()->user()->type === 'User')
-                        <a href="{{ route('web.logout') }}" wire:navigate class="nav-item nav-link">Logout</a>
+                        <a href="{{ route('web.logout') }}" wire:navigate
+                            class="nav-item nav-link {{ request()->routeIs('web.logout') ? 'active' : '' }}">
+                            Logout
+                        </a>
                     @endif
                 @endauth
-
             </div>
         </div>
     </nav>
