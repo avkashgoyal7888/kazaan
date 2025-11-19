@@ -75,23 +75,6 @@
                                 </span>
                             </button>
                         </div>
-
-                        <!-- Additional Links -->
-                        <div class="col-12 text-center mt-3">
-                            <p class="text-white">
-                                Don't have an account? 
-                                <a href="#" class="text-decoration-none text-primary">Register here</a>
-                            </p>
-                            <p class="text-white">
-                                <a href="#" class="text-decoration-none text-primary">Forgot your password?</a>
-                            </p>
-                            <p class="text-white">
-                                Admin user? 
-                                <a href="#" class="text-decoration-none text-warning">
-                                    <i class="fas fa-user-shield me-1"></i>Admin Login
-                                </a>
-                            </p>
-                        </div>
                     </div>
                 </form>
             </div>
