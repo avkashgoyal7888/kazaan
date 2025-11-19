@@ -47,8 +47,8 @@ class PayuController extends Controller
             $hashString = $key . '|' . $txnid . '|' . $amount . '|' . $productInfo . '|' . $firstname . '|' . $email . '|||||||||||' . $salt;
             $hash = strtolower(hash('sha512', $hashString));
 
-            $payuUrl = 'https://test.payu.in/_payment';            // For production:
-            // $payuUrl = 'https://secure.payu.in/_payment';
+            // $payuUrl = 'https://test.payu.in/_payment';            // For production:
+            $payuUrl = 'https://secure.payu.in/_payment';
 
             session([
                 'payu_txnid'   => $txnid,
