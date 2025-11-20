@@ -22,24 +22,6 @@
             font-size: 1.2rem;
             margin-top: 10px;
         }
-        
-        .user-card {
-            background: rgba(255,255,255,0.25);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 50px;
-            padding: 15px 30px;
-        }
-        
-        .user-initial {
-            width: 50px;
-            height: 50px;
-            background: white;
-            color: #667eea;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
     </style>
 @endpush
 
@@ -52,17 +34,6 @@
                     <i class="bi bi-speedometer2"></i> Dashboard
                 </h1>
                 <p class="welcome-text mb-0">Welcome back! Here's your overview</p>
-            </div>
-            <div class="col-md-4 text-end mt-3 mt-md-0">
-                <div class="user-card d-inline-flex align-items-center gap-3">
-                    <div class="user-initial d-flex align-items-center justify-content-center">
-                        {{ strtoupper(substr(Auth::user()->name, 0, 1)) }}
-                    </div>
-                    <div class="text-white text-start">
-                        <h6 class="mb-0 fw-bold">{{ Auth::user()->name }}</h6>
-                        <small>Administrator</small>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -139,7 +110,7 @@
                 </div>
                 <div class="card-body">
                     <div style="height: 400px;">
-                        <canvas id="monthlyBookingChart"></canvas>
+                        <canvas id="monthlyBookingChart" wire:ignore></canvas>
                     </div>
                 </div>
             </div>
@@ -155,7 +126,7 @@
                 </div>
                 <div class="card-body">
                     <div style="height: 400px;">
-                        <canvas id="monthlyPaymentChart"></canvas>
+                        <canvas id="monthlyPaymentChart" wire:ignore></canvas>
                     </div>
                 </div>
             </div>
@@ -166,79 +137,104 @@
 @push('js')
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    // Monthly Booking Chart
-    const monthlyBookingCtx = document.getElementById('monthlyBookingChart').getContext('2d');
-    new Chart(monthlyBookingCtx, {
-        type: 'line',
-        data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            datasets: [{
-                label: 'Bookings',
-                data: @json($monthlyBookingData),
-                borderColor: 'rgb(75, 192, 192)',
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                tension: 0.4,
-                fill: true
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    display: true,
-                    position: 'top'
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    ticks: {
-                        stepSize: 100,
-                        callback: function(value) {
-                            return Number.isInteger(value) ? value : '';
-                        }
-                    }
-                }
-            }
-        }
+    document.addEventListener('livewire:navigated', function () {
+        initializeCharts();
     });
 
-    // Monthly Payment Chart
-    const monthlyPaymentCtx = document.getElementById('monthlyPaymentChart').getContext('2d');
-    new Chart(monthlyPaymentCtx, {
-        type: 'line',
-        data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            datasets: [{
-                label: 'Payment Amount (₹)',
-                data: @json($monthlyPaymentData),
-                borderColor: 'rgb(255, 99, 132)',
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                tension: 0.4,
-                fill: true
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    display: true,
-                    position: 'top'
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    ticks: {
-                        callback: function(value) {
-                            return '₹' + value.toLocaleString();
+    function initializeCharts() {
+        // Destroy existing charts if they exist
+        if (window.monthlyBookingChart instanceof Chart) {
+            window.monthlyBookingChart.destroy();
+        }
+        if (window.monthlyPaymentChart instanceof Chart) {
+            window.monthlyPaymentChart.destroy();
+        }
+
+        // Monthly Booking Chart
+        const monthlyBookingCtx = document.getElementById('monthlyBookingChart');
+        if (monthlyBookingCtx) {
+            window.monthlyBookingChart = new Chart(monthlyBookingCtx.getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    datasets: [{
+                        label: 'Bookings',
+                        data: @json($monthlyBookingData),
+                        borderColor: 'rgb(75, 192, 192)',
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 100,
+                                callback: function(value) {
+                                    return Number.isInteger(value) ? value : '';
+                                }
+                            }
                         }
                     }
                 }
-            }
+            });
         }
-    });
+
+        // Monthly Payment Chart
+        const monthlyPaymentCtx = document.getElementById('monthlyPaymentChart');
+        if (monthlyPaymentCtx) {
+            window.monthlyPaymentChart = new Chart(monthlyPaymentCtx.getContext('2d'), {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    datasets: [{
+                        label: 'Payment Amount (₹)',
+                        data: @json($monthlyPaymentData),
+                        borderColor: 'rgb(255, 99, 132)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '₹' + value.toLocaleString();
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    }
+
+    // Initialize charts on first load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeCharts);
+    } else {
+        initializeCharts();
+    }
 </script>
 @endpush
