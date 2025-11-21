@@ -1,5 +1,5 @@
 @push('css')
-<title>Kazan Lifestyle: Login</title>
+<title>Kazaan Lifestyle: Login</title>
 <meta name="description"
         content="Login to your Kazaan Lifestyle account to access exclusive features, manage your profile, and explore personalized content. Secure and easy sign-in for all users.">
 @endpush
@@ -11,7 +11,7 @@
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
                 <h5 class="section-booking-title mb-5 pe-3">Log In to Explore Exclusive Escapes</h5>
                 <p class="mb-4 text-white">Discover a world where every journey is carefully curated, every destination
-                    handpicked, and every stay defined by elegance. At Kazan Lifestyle, we specialize in luxury resorts,
+                    handpicked, and every stay defined by elegance. At Kazaan Lifestyle, we specialize in luxury resorts,
                     premium hotels, and personalized tour packages designed to meet your highest expectations.</p>
                 <p class="mb-4 text-white">Accessing our curated collection of luxury getaways is just one step away. As
                     a registered member, you'll unlock full details of world-class resorts, seasonal offers, private
@@ -20,7 +20,7 @@
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 col-12">
                 <h1 class="mb-3 text-white">Login</h1>
-                <p class="mb-4 text-white">Welcome to Kazan Lifestyle – Your Gateway to Luxury Travel</p>
+                <p class="mb-4 text-white">Welcome to Kazaan Lifestyle – Your Gateway to Luxury Travel</p>
                 
                 <form wire:submit.prevent="login">
                     <div class="row g-3">

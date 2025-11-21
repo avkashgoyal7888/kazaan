@@ -168,7 +168,7 @@
 <hr data-start="4531" data-end="4534" />
 <h2 data-start="4536" data-end="4566">14. <strong data-start="4543" data-end="4566">Contact Information</strong></h2>
 <p data-start="4567" data-end="4617">For queries, concerns, or support, please contact:</p>
-<p data-start="4619" data-end="4714"><strong data-start="4619" data-end="4639">Kazaan Lifestyle</strong><br data-start="4639" data-end="4642" /> Vagator, Goa (403519)<br data-start="4663" data-end="4666" /> 📞 +91-9209412692<br data-start="4683" data-end="4686" /> 📧 <a class="decorated-link cursor-pointer" rel="noopener" data-start="4689" data-end="4712">info@kazanlifestyle.com</a></p>
+<p data-start="4619" data-end="4714"><strong data-start="4619" data-end="4639">Kazaan Lifestyle</strong><br data-start="4639" data-end="4642" /> Vagator, Goa (403519)<br data-start="4663" data-end="4666" /> 📞 +91-9209412692<br data-start="4683" data-end="4686" /> 📧 <a class="decorated-link cursor-pointer" rel="noopener" data-start="4689" data-end="4712">info@kazaanlifestyle.com</a></p>
 <hr data-start="4716" data-end="4719" />
 <p data-start="4721" data-end="4833">By booking with Kazaan Lifestyle, you agree to accept and abide by all the Terms and Conditions mentioned above.</p>
 <!-- Comments are visible in the HTML source only -->

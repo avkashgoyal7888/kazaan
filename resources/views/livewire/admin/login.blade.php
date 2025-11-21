@@ -1,7 +1,7 @@
 @push('css')
-    <title>Kazan Lifestyle: Admin Login</title>
+    <title>Kazaan Lifestyle: Admin Login</title>
     <meta name="description"
-        content="Admin login for Kazan Lifestyle platform. Access the admin dashboard to manage users, bookings, resorts, and other critical content. Secure access for administrators only.">
+        content="Admin login for Kazaan Lifestyle platform. Access the admin dashboard to manage users, bookings, resorts, and other critical content. Secure access for administrators only.">
 @endpush
 <div class="container-fluid booking d-flex justify-content-center align-items-center" style="height: 100dvh;">
     <div class="container">

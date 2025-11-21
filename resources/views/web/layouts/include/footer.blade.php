@@ -22,7 +22,7 @@
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="mb-4 text-white">Need Help</h4>
-                    <a href=""><i class="fas fa-envelope me-2"></i> info@kazanlifestyle.com</a>
+                    <a href=""><i class="fas fa-envelope me-2"></i> info@kazaanlifestyle.com</a>
                     <a href=""><i class="fas fa-phone me-2"></i> +91-9209412692</a>
                 </div>
             </div>

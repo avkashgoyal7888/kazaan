@@ -51,7 +51,7 @@
 <p data-start="1609" data-end="1705">Reason for refund with supporting evidence (medical certificate, travel restriction proof, etc.)</p>
 </li>
 </ul>
-<p data-start="1707" data-end="1777">📧 <strong data-start="1710" data-end="1720">Email:</strong> <a class="decorated-link cursor-pointer" rel="noopener" data-start="1721" data-end="1744">info@kazanlifestyle.com</a><br data-start="1744" data-end="1747" /> 📞 <strong data-start="1750" data-end="1762">Support:</strong> +91-9209412692</p>
+<p data-start="1707" data-end="1777">📧 <strong data-start="1710" data-end="1720">Email:</strong> <a class="decorated-link cursor-pointer" rel="noopener" data-start="1721" data-end="1744">info@kazaanlifestyle.com</a><br data-start="1744" data-end="1747" /> 📞 <strong data-start="1750" data-end="1762">Support:</strong> +91-9209412692</p>
 <p data-start="1779" data-end="1855">Our team will review your request and respond within <strong data-start="1832" data-end="1854">7&ndash;10 business days</strong>.</p>
 <hr data-start="1857" data-end="1860" />
 <h2 data-start="1862" data-end="1886"><strong data-start="1865" data-end="1886">4. No-Show Policy</strong></h2>
@@ -102,7 +102,7 @@
 <hr data-start="3024" data-end="3027" />
 <h2 data-start="3029" data-end="3056"><strong data-start="3032" data-end="3056">8. Contact &amp; Support</strong></h2>
 <p data-start="3058" data-end="3120">For any assistance or special refund requests, kindly contact:</p>
-<p data-start="3122" data-end="3217"><strong data-start="3122" data-end="3142">Kazaan Lifestyle</strong><br data-start="3142" data-end="3145" /> Vagator, Goa (403519)<br data-start="3166" data-end="3169" /> 📞 +91-9209412692<br data-start="3186" data-end="3189" /> 📧 <a class="decorated-link cursor-pointer" rel="noopener" data-start="3192" data-end="3215">info@kazanlifestyle.com</a></p>
+<p data-start="3122" data-end="3217"><strong data-start="3122" data-end="3142">Kazaan Lifestyle</strong><br data-start="3142" data-end="3145" /> Vagator, Goa (403519)<br data-start="3166" data-end="3169" /> 📞 +91-9209412692<br data-start="3186" data-end="3189" /> 📧 <a class="decorated-link cursor-pointer" rel="noopener" data-start="3192" data-end="3215">info@kazaanlifestyle.com</a></p>
 <hr data-start="3219" data-end="3222" />
 <p data-start="3224" data-end="3328">By booking with <strong data-start="3240" data-end="3263">KazaanLifestyle.com</strong>, you acknowledge and agree to this <strong data-start="3299" data-end="3327">Return and Refund Policy</strong>.</p>
 <!-- Comments are visible in the HTML source only -->

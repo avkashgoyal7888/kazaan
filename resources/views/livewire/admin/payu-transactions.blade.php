@@ -1,5 +1,5 @@
 @push('css')
-    <title>Contact Us</title>
+    <title>Payments</title>
 @endpush
 
 <div>

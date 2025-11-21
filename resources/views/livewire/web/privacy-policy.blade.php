@@ -137,7 +137,7 @@
 <p data-start="3124" data-end="3161">Opt out of marketing communications</p>
 </li>
 </ul>
-<p data-start="3163" data-end="3245">To exercise any of these rights, you may contact us at <strong data-start="3218" data-end="3245"><a class="decorated-link cursor-pointer" rel="noopener" data-start="3220" data-end="3243">info@kazanlifestyle.com</a></strong></p>
+<p data-start="3163" data-end="3245">To exercise any of these rights, you may contact us at <strong data-start="3218" data-end="3245"><a class="decorated-link cursor-pointer" rel="noopener" data-start="3220" data-end="3243">info@kazaanlifestyle.com</a></strong></p>
 <hr data-start="3247" data-end="3250" />
 <h2 data-start="3252" data-end="3280">8. <strong data-start="3258" data-end="3280">Children&rsquo;s Privacy</strong></h2>
 <p data-start="3282" data-end="3453">Our services are <strong data-start="3299" data-end="3351">not intended for individuals under the age of 18</strong>. We do not knowingly collect data from minors. If we discover such data, it will be deleted promptly.</p>
@@ -147,7 +147,7 @@
 <hr data-start="3732" data-end="3735" />
 <h2 data-start="3737" data-end="3758">10. <strong data-start="3744" data-end="3758">Contact Us</strong></h2>
 <p data-start="3760" data-end="3848">For any questions, concerns, or requests related to this Privacy Policy, please contact:</p>
-<p data-start="3850" data-end="3945"><strong data-start="3850" data-end="3870">Kazaan Lifestyle</strong><br data-start="3870" data-end="3873" /> Vagator, Goa (403519)<br data-start="3894" data-end="3897" /> 📞 +91-9209412692<br data-start="3914" data-end="3917" /> 📧 <a class="decorated-link cursor-pointer" rel="noopener" data-start="3920" data-end="3943">info@kazanlifestyle.com</a></p>
+<p data-start="3850" data-end="3945"><strong data-start="3850" data-end="3870">Kazaan Lifestyle</strong><br data-start="3870" data-end="3873" /> Vagator, Goa (403519)<br data-start="3894" data-end="3897" /> 📞 +91-9209412692<br data-start="3914" data-end="3917" /> 📧 <a class="decorated-link cursor-pointer" rel="noopener" data-start="3920" data-end="3943">info@kazaanlifestyle.com</a></p>
 <hr data-start="3947" data-end="3950" />
 <p data-start="3952" data-end="4053">By using KazaanLifestyle.com, you acknowledge and agree to the terms outlined in this Privacy Policy.</p>
 <!-- Comments are visible in the HTML source only -->

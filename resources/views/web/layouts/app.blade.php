@@ -103,7 +103,7 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-md-end mb-md-0 text-center">
-                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Kazan
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Kazaan
                             Lifestyle</a>, All right reserved.
                     </div>
                     <div class="col-md-6 text-md-start text-center">Designed By <a class="text-white"

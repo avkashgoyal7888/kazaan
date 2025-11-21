@@ -45,7 +45,7 @@
                         <div class="text-center">
                             <i class="fa fa-envelope-open fa-3x text-contact mb-3"></i>
                             <h4 class="text-contact">Email</h4>
-                            <p class="mb-0">info@kazanlifestyle.com</p>
+                            <p class="mb-0">info@kazaanlifestyle.com</p>
                         </div>
                     </div>
                 </div>
